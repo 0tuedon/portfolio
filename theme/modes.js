@@ -1,6 +1,6 @@
 // Different colors for each mode
 export const lightTheme = {
-  rootBackground: "white",
+  rootBackground: "#000900",
 };
 
 export const darkTheme = {
