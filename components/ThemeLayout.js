@@ -3,7 +3,7 @@ import React from "react";
 import { darkTheme, lightTheme } from "../theme/modes";
 
 const ThemeLayout = ({ children }) => {
-  const { colorMode } = useColorMode("light");
+  const { colorMode } = useColorMode("dark");
   return (
     <Box
       background={
