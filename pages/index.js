@@ -35,12 +35,13 @@ export default function Home() {
               display={{ base: "hidden", md: "inline-block" }}
               fontSize={"0.95rem"}
               fontWeight={500}
+              color="#fff"
             >
               Contact
             </Link>
           </NextLink>
           <NextLink href="#" download passHref>
-            <Link fontSize={"0.95rem"} fontWeight={500}>
+            <Link color="#fff" fontSize={"0.95rem"} fontWeight={500}>
               Resume
             </Link>
           </NextLink>
