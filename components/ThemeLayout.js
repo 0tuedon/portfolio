@@ -1,6 +1,7 @@
 import { Box, useColorMode } from "@chakra-ui/react";
 import React from "react";
 import { darkTheme, lightTheme } from "../theme/modes";
+import Blur from "./others/Blur";
 
 const ThemeLayout = ({ children }) => {
   const { colorMode } = useColorMode("dark");
@@ -18,6 +19,7 @@ const ThemeLayout = ({ children }) => {
       overflow="hidden"
       position="relative"
     >
+      <Blur />
       {children}
     </Box>
   );
