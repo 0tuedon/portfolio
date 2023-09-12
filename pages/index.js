@@ -1,123 +1,33 @@
-import { Box, useColorMode } from '@chakra-ui/react'
-import Head from 'next/head'
-import Image from 'next/image'
-import ThemeLayout from '../components/ThemeLayout'
-import styles from '../styles/Home.module.css'
-import { darkTheme, lightTheme } from '../theme/modes'
+import { Box, Center, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import Head from "next/head";
+import ThemeLayout from "../components/ThemeLayout";
+import Navbar from "../components/app/Navbar";
+import Footer from "../components/app/Footer";
+import Hero from "../components/app/Hero";
 
 export default function Home() {
-  const {colorMode,toggleColorMode} = useColorMode()
-  
+
   return (
     <ThemeLayout>
       <Head>
         <title>Tuedon Tuoyo</title>
-        <meta name="description" content="My portfolio" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Flex
-        justifyContent="space-between"
-        padding={["2.5rem 1rem", "2.5rem 7.44rem"]}
+        flexDir={"column"}
+        fontFamily={"Khand"}
+        mx={"auto"}
+        justifyContent={"space-between"}
+        minHeight={"100vh"}
+        py="40px"
+        width={"full"}
+        color="white"
+        maxWidth={["100%", "100%", "100%", "85%"]}
       >
-        <Image src="/assets/svgs/logo.svg" alt="logo" width={118} height={29} />
-        <Flex
-          gap={["1rem", "2.38rem"]}
-          as="ul"
-          fontFamily={`"Khand", sans-serif`}
-        >
-          <NextLink href="mailto:tuedontuoyo@gmail.com" passHref>
-            <Link
-              display={{ base: "hidden", md: "inline-block" }}
-              fontSize={"0.95rem"}
-              fontWeight={500}
-              color="#fff"
-            >
-              Contact
-            </Link>
-          </NextLink>
-          <NextLink href="#" download passHref>
-            <Link color="#fff" fontSize={"0.95rem"} fontWeight={500}>
-              Resume
-            </Link>
-          </NextLink>
-        </Flex>
+       
+        <Navbar />
+        <Hero />
+        <Footer />
       </Flex>
-
-      <Box
-        as="main"
-        position="relative"
-        minHeight="100vh"
-        width="100%"
-        color="#fff"
-        display="grid"
-        placeContent={"center"}
-        paddingBottom="10"
-      >
-        <Center
-          backgroundImage="/assets/svgs/FloatingTexts.svg"
-          backgroundPosition="center"
-          backgroundSize="cover"
-          backgroundRepeat={"no-repeat"}
-          w="76rem"
-          h="41rem"
-          maxW="100%"
-        >
-          <Box>
-            <Box as="div" textAlign={"center"} mb="4.69rem">
-              <Heading
-                fontSize={["3rem", "4rem"]}
-                fontWeight={500}
-                mb={"0.75rem"}
-              >
-                Hi,{" "}
-                <Box as="span" color="#FFB35A">
-                  Tueddy
-                </Box>{" "}
-                here
-              </Heading>
-              <Heading
-                fontSize={["2rem", "2.25rem"]}
-                fontWeight={400}
-                mb={"1.75rem"}
-              >
-                Frontend Engineer
-              </Heading>
-              <Text
-                fontSize={["0.875rem", "1rem"]}
-                fontWeight={400}
-                color={"#8B8B8B"}
-                letterSpacing={"-0.01rem"}
-              >
-                Let&apos;s discuss that next project and get your product
-                running
-              </Text>
-            </Box>
-            <Center>
-              <Link
-                borderRadius={"1.875rem"}
-                padding="1rem 2.25rem"
-                background="#FFB35A"
-                href="mailto:tuedontuoyo@gmail.com"
-                sx={{
-                  _hover: {
-                    background: "#FFB35A",
-                  },
-                }}
-              >
-                <Text
-                  textAlign="center"
-                  fontSize="1rem"
-                  fontWeight={600}
-                  letterSpacing={"-0.015rem"}
-                  color="#000600"
-                >
-                  Contact Me
-                </Text>
-              </Link>
-            </Center>
-          </Box>
-        </Center>
-      </Box>
     </ThemeLayout>
-  )
+  );
 }

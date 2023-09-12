@@ -23,8 +23,8 @@ export const theme = extendTheme({
     outline: "0 0 0 1px #539f55",
   },
   fonts: {
-    heading: `"Matter SQ", sans-serif`,
-    body: `"Matter SQ", sans-serif`,
+    heading: `'Courier Prime', monospace`,
+    body: `Khand', monospace;`,
   },
   lineHeight: {
     "leading-box-h": "120%",
