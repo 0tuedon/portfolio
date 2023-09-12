@@ -6,5 +6,9 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
-    rootBackground:'#121212'
+    rootBackground:'#121212',
+    white:"#FFFFFF",
+    gold:{
+        400:"#FFB35A"
+    }
 }

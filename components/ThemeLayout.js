@@ -3,19 +3,21 @@ import React from "react";
 import { darkTheme, lightTheme } from "../theme/modes";
 
 const ThemeLayout = ({ children }) => {
-    const {colorMode,toggleColorMode} = useColorMode()
+  const { colorMode } = useColorMode("dark");
   return (
     <Box
-      background={
-        colorMode == "light"
-          ? `${lightTheme.rootBackground}`
-          : `${darkTheme.rootBackground}`
-      }
-      height={"100vh"}
-      width={"100vw"}
-      onClick={toggleColorMode}
+      background={`${darkTheme.rootBackground}`}
+      width={"100%"}
+      minHeight={"100vh"}
+      maxHeight={"100vh"}
+      mx="auto"
+      px={['24px',"24px","24px","24px",0]}
+      backgroundPosition="center"
+      backgroundSize="cover"
+      backgroundAttachment="fixed"
+      overflow="hidden"
+      position="relative"
     >
-      {/* The main application starts from here */}
       {children}
     </Box>
   );
