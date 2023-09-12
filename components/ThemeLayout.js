@@ -3,7 +3,7 @@ import React from "react";
 import { darkTheme, lightTheme } from "../theme/modes";
 
 const ThemeLayout = ({ children }) => {
-  const { colorMode } = useColorMode("dark");
+    const {colorMode,toggleColorMode} = useColorMode()
   return (
     <Box
       background={
@@ -11,14 +11,9 @@ const ThemeLayout = ({ children }) => {
           ? `${lightTheme.rootBackground}`
           : `${darkTheme.rootBackground}`
       }
-      width={"100%"}
-      minHeight="100vh"
-      backgroundImage="/assets/svgs/Back.svg"
-      backgroundPosition="center"
-      backgroundSize="cover"
-      backgroundAttachment="fixed"
-      overflow="hidden"
-      position="relative"
+      height={"100vh"}
+      width={"100vw"}
+      onClick={toggleColorMode}
     >
       {/* The main application starts from here */}
       {children}

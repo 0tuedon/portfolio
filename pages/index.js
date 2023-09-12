@@ -1,18 +1,13 @@
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Heading,
-  Link,
-  Text,
-} from "@chakra-ui/react";
-import Head from "next/head";
-import Image from "next/image";
-import NextLink from "next/link";
-import ThemeLayout from "../components/ThemeLayout";
+import { Box, useColorMode } from '@chakra-ui/react'
+import Head from 'next/head'
+import Image from 'next/image'
+import ThemeLayout from '../components/ThemeLayout'
+import styles from '../styles/Home.module.css'
+import { darkTheme, lightTheme } from '../theme/modes'
 
 export default function Home() {
+  const {colorMode,toggleColorMode} = useColorMode()
+  
   return (
     <ThemeLayout>
       <Head>
@@ -124,5 +119,5 @@ export default function Home() {
         </Center>
       </Box>
     </ThemeLayout>
-  );
+  )
 }
