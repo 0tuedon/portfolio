@@ -5,6 +5,8 @@ import "../styles/globals.css"
 import '@fontsource/khand'
 import '@fontsource/khand/500.css'
 import '@fontsource/courier-prime'
+import '@fontsource/manrope'
+import '@fontsource/manrope/500.css'
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme} >
