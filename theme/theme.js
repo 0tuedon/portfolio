@@ -24,7 +24,8 @@ export const theme = extendTheme({
   },
   fonts: {
     heading: `'Courier Prime', monospace`,
-    body: `Khand', monospace;`,
+    body: `'Khand', monospace;`,
+    body:`"Manrope", sans-serif`,
   },
   lineHeight: {
     "leading-box-h": "120%",

@@ -36,7 +36,7 @@ const Hero = () => {
         as={"span"}
         textAlign={"center"}
       >
-        Frontend Engineer
+        Software Engineer
       </Text>
     </Flex>
   );

@@ -16,7 +16,7 @@ const ThemeLayout = ({ children }) => {
       backgroundPosition="center"
       backgroundSize="cover"
       backgroundAttachment="fixed"
-      overflow="hidden"
+      overflow="scroll"
       position="relative"
     >
       <Blur />
