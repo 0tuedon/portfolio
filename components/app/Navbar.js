@@ -17,7 +17,7 @@ const Navbar = () => {
         <NextLink href={"/about"}>
           <Link>About</Link>
         </NextLink>
-        <Link href="/tuedon-cv.pdf" download>
+        <Link href="/Tuedon_Tuoyo.pdf" download>
           Resume
         </Link>
       </Flex>
