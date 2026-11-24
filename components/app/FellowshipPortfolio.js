@@ -7,6 +7,11 @@ const contacts = [
   { label: "GitHub", href: "https://github.com/0tuedon" },
   { label: "GitLab", href: "https://gitlab.com/0tuedon" },
   { label: "Medium", href: "https://medium.com/@tuedontuoyo" },
+  { label: "X", href: "https://x.com/TuedonTuoyo" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/tuedon-tuoyo-9404351a4/",
+  },
 ];
 
 const sections = [
@@ -133,12 +138,12 @@ const sections = [
     ],
   },
   {
-    title: "PRESENTATION",
+    title: "RESEARCH & PRESENTATION",
     links: [
       {
         label: "Coin Selection (Google Slides)",
         href: "https://docs.google.com/presentation/d/1Mh6qKWedt-BI8ZL1kxgRMVJEwAn-Dnq8Uh4uWg6V0aI/edit?usp=sharing",
-        tldr: "Slides on Bitcoin coin selection, the topic behind my two coin selection articles below.",
+        tldr: "Our research topic: how wallets choose which UTXOs to spend, how Bitcoin Core does it, and how BDK compares. It matters because it decides the fees users pay.",
       },
     ],
   },
