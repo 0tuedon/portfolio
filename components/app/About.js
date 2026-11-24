@@ -1,4 +1,5 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Link, Text } from "@chakra-ui/react";
+import NextLink from "next/link";
 import Image from "next/image";
 import React from "react";
 
@@ -40,10 +41,11 @@ const About = () => {
             >
               I’m{" "}
               <Text as={"span"} fontWeight={500} color={"white"}>
-                <strong>Tuedon </strong>
+                <strong>Tuedon</strong>
               </Text>
-              a <strong>SOFTWARE ENGINEER, </strong> combining ease of approach
-              with a professional mindset to develop impactful solutions.
+              , a <strong>SOFTWARE ENGINEER</strong> with over five years of
+              experience. I&apos;ve also been involved in the Bitcoin space,
+              building tools that help developers learn and understand Bitcoin.
             </Text>
           </Flex>
 
@@ -55,13 +57,12 @@ const About = () => {
           >
             <Heading color={"#80808078"}>WHAT I DO</Heading>
             <Text color={"white"} fontSize={["18px", "18px", "24px"]}>
-              I find joy in working with technology, particularly in utilizing
-              PHP and JavaScript to develop websites that are easy for users to
-              navigate. My focus revolves around ensuring a smooth integration
-              between the server side (using PHP) and the interactive components
-              (using JavaScript). Recently, I&apos;ve delved into the intriguing
-              realm of blockchain engineering, adding a new dimension to my
-              technological journey.
+              I build software and dig into how Bitcoin and Lightning work
+              under the hood. Through the Btrust fellowship, I contributed to
+              VLS (Validating Lightning Signer): fixing bugs, investigating
+              issues, reviewing merge requests, and writing about what I
+              learned, from coin selection to running a Lightning node on
+              Signet.
             </Text>
           </Flex>
 
@@ -73,14 +74,16 @@ const About = () => {
           >
             <Heading color={"#80808078"}>WHAT I CURRENTLY WORK ON</Heading>
             <Text color={"white"} fontSize={["18px", "18px", "24px"]}>
-              I am currently in the process of developing a comprehensive
-              event-calendar JavaScript library with the primary objective of
-              providing developers with a user-friendly tool to effortlessly
-              create and integrate scheduling components into their projects.
-              This library is designed to streamline the often complex task of
-              incorporating dynamic and interactive event calendars into various
-              applications, serving as a valuable resource for developers
-              seeking efficient solutions for scheduling functionalities.
+              I&apos;m continuing to contribute to VLS, starting with
+              simulation testing: simulating large amounts of Lightning
+              activity to see how VLS performs under hundreds or thousands of
+              channels and signing requests. See my{" "}
+              <NextLink href={"/btrust-fellow"} passHref>
+                <Link textDecoration={"underline"}>
+                  Btrust fellowship portfolio
+                </Link>
+              </NextLink>{" "}
+              for everything I worked on.
             </Text>
           </Flex>
         </Flex>
